@@ -3,7 +3,7 @@ import {  useState, useEffect } from 'react';
 import { Box, Stack, Typography } from '@mui/material';
 
 import { fetchFromAPI } from '../utils/fetchFromAPI'; 
-import { SideBar, Videos } from './';
+import { SideBar, Videos,  SearchBar } from './';
 
 
 const Feed = () => {
@@ -22,6 +22,7 @@ const Feed = () => {
         selectedCategory={selectedCategory}
         setSelectedCategory={setSelectedCategory}
       />
+
 
       <Typography className="copyright" variant="body2" sx={{ mt: 1.5, color: "#fff" }}>
         Copryright 2023 Tourify
